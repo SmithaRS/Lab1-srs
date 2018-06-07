@@ -6,13 +6,13 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-public class TestHelloWorld {
+public class TestFizzBuzz {
 
-  private HelloWorld fixture;
+  private FizzBuzz fixture;
 
   @Before
   public void setUp() throws Exception {
-    fixture = new HelloWorld();
+    fixture = new FizzBuzz();
   }
 
   @After
@@ -20,21 +20,38 @@ public class TestHelloWorld {
     fixture = null;
   }
 
-  @Test
-  public void getMessage() {
-    assertNotNull(fixture);
-    assertEquals("hello world", fixture.getMessage());
-  }
+@Test
+  public void testNegativeTen(){
+  assertNull(fixture.fizzBuzz(-10));
 
-  @Test
-  public void getMessage2() { // this test is broken - fix it!
-    assertNull(fixture);
-    assertEquals("hello world", fixture.getMessage());
-  }
+}
 
-  @Test
-  public void getYear() { // this test is OK, fix HelloWorld.java to make it pass!
-    assertNotNull(fixture);
-    assertEquals(2018, fixture.getYear());
-  }
+@Test
+    public void testNegativeOne(){
+        assertNull(fixture.fizzBuzz(-1));
+
+    }
+
+    @Test
+    public void testZero(){
+        assertNull(fixture.fizzBuzz(0));
+
+    }
+    @Test
+    public void testOne(){
+        assertNull(fixture.fizzBuzz(1));
+
+    }
+
+    @Test
+    public void testSeven(){
+        assertNull(fixture.fizzBuzz(7));
+
+    }
+
+    @Test
+    public void testSeventeen(){
+        assertNull(fixture.fizzBuzz(17));
+
+    }
 }
