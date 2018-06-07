@@ -1,0 +1,24 @@
+											COMP 271- Data Structures
+											
+Name: Smitha Subbarao
+Due date: June 6th, 2018												
+
+Assignment: Lab1- FizzBuzz Program
+
+Discussion Questions:
+
+1) What would be a really simple solution if n were not an argument, i.e., if it were always 17?
+Answer 1: If n were not an argument, then we would always know that the size of the array would be 17 and that we would have to iterate
+through the loop only 17 times.
+
+
+2) How could you have automatically tested your initial solution from part 2?
+Answer 2:
+From part 2, we could have automatically plugged in values in Main or insert arguments into gradle and run these values to check 
+if the output is correct or not.
+
+
+3) What changes between parts 2, 3, and 4, and what stays the same? 
+Does it matter what list implementation you choose? If so, in what way(s)?
+Answer 3: Part 1: The logic of the program remains the same between parts 2,3 and 4, however the data structures that are used differ in these steps.
+Part 2: From the overall picture, list implementation matters in terms of speed (total time taken), efficiency and amount of memory used in the process. Hence, when handling large inputs of data, it is important to compare and test which implementation is better suited for that particular task.
